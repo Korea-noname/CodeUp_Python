@@ -1,0 +1,5 @@
+# 정수 2개를 입력받아 a를 2^b배 곱한 값으로 출력
+
+num1, num2 = input().split()
+num1, num2 = int(num1), int(num2)
+print(num1 << num2)
