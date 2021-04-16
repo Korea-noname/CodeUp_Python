@@ -5,8 +5,7 @@
 # 즉, 1부터 n까지 정수를 계속 더해 나간다고 할 때,
 # 어디까지 더해야 입력한 수보다 같거나 커지는 지를 알아보고자하는 문제
 
-num = input()
-num = int(num)
+num = int(input())
 zero = 0
 sum = 0
 value = 1
