@@ -8,13 +8,29 @@
 
 # 출석 번호를 n번 무작위로 불렀을 때, 각 번호(1 ~ 23)가 불린 횟수를 각각 출력
 
-num = int(input())
+# num = int(input())
 
-iteration = list(map(int, input().split()))
+# iteration = list(map(int, input().split()))
 
-student = [0]*23
+# student = [0]*23
 
-for i in iteration:
-  student[i-1] += 1
+# for i in iteration:
+#   student[i-1] += 1
 
-print (" ".join(repr(i) for i in student))
+# print (" ".join(repr(i) for i in student))
+
+iteration = int(input())
+student_num = input().split()
+
+for i in range(iteration):
+  student_num[i] = int(student_num[i])
+
+empty = []
+for i in range(24):
+  empty.append(0)
+
+for i in range(iteration):
+  empty[student_num[i]] += 1
+
+for i in range(1, 24):
+  print(empty[i], end=' ')
