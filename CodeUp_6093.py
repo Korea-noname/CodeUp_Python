@@ -5,7 +5,12 @@
 
 # 출석 번호를 n번 무작위로 불렀을 때, 부른 번호를 거꾸로 출력
 
-num = int(input())
-a = list(map(int, input().split()))
+# num = int(input())
+# a = list(map(int, input().split()))
 
-print(" ".join(repr(i) for i in reversed(a)))
+# print(" ".join(repr(i) for i in reversed(a)))
+
+num = int(input())
+s_num = list(map(str, input().split()))
+for i in s_num[::-1]:
+  print(i, end= ' ')
